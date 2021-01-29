@@ -1,0 +1,38 @@
+
+.webdev-sticky-nav-bar {
+  background-color: #4d94ff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+#container1 {
+  padding-top: 55px;
+}
+
+#name {
+  font-size: 1.5em;
+  color: white;
+}
+
+#input1 {
+  background-color: #80b3ff;
+}
+
+#input1::placeholder{
+  color: white;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.fa-plus {
+  color: purple;
+}
+#iconFix {
+  position: fixed;
+  margin-left:53em;
+  margin-top:30em;
+  color: #80b3ff;
+}
