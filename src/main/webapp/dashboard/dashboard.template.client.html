@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="dashboard.style.client.css"/>
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="dashboard.style.client.css" />
   <title>Dashboard</title>
 </head>
+
 <body>
-  <div class="row webdev-sticky-nav-bar">
-    <div class="col-1">
+  <div class="row yz-sticky-nav-bar">
+    <div class="col-1" id="hamburger">
       <i class="fas fa-bars fa-2x"></i>
     </div>
-    <div class="col-3" id="name">
+    <div class="col-2" id="name">
       Course Manager
     </div>
-    <div class="col-6">
-      <input type="text" class="form-control" placeholder="New Course Title" id="input1"/>
+    <div class="col-7">
+      <input type="text" class="form-control" placeholder="New Course Title" id="input1" />
     </div>
     <div class="col-2">
       <i class="fas fa-plus fa-2x"></i>
     </div>
   </div>
+
+  <div class="row form" id="yz-table-title">
+      <div class="col-6" id="title1">Title</div>
+      <div class="col-1" id="title2">
+        Owned by
+        <i class="fas fa-sort-down"></i>
+      </div>
+      <div class="col-2" id="title3">Last modified by me</div>
+      <div class="col-0.5" id="title4">
+        <i class="fas fa-grip-horizontal fa-1.5x"></i>
+      </div>
+      <div class="col-2.5" id="title5">
+        <i class="fas fa-sort-alpha-down fa-1.5x"></i>
+      </div>
+  </div>
+
+
   <div class="row" id="iconFix">
-    <div class="col-10"></div>
-    <div class="col-2">
+    <div class="col-11"></div>
+    <div class="col-1">
       <i class="fas fa-plus fa-2x"></i>
     </div>
   </div>
+  <!--  <div class="row yz-table-title">-->
+  <!--    <div class="col-5">-->
+  <!--      Title-->
+  <!--    </div>-->
+  <!--    <div class="col-2">-->
+  <!--      Owned by-->
+  <!--    </div>-->
+  <!--    <div class="col-2">-->
+  <!--      Last modified by me-->
+  <!--    </div>-->
+  <!--    <div class="col-1">-->
+  <!--      <i class="fas fa-grip-horizontal fa-2x"></i>-->
+  <!--    </div>-->
+  <!--    <div class="col-2">-->
+  <!--      <i class="fas fa-sort-alpha-down fa-2x"></i>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
   <div class="container" id="container1">
     <h1>
       Dashboard
     </h1>
     <table class="table table-light table-striped table-hover">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Owned by</th>
-          <th>Last modified</th>
-          <th></th>
-        </tr>
-
-      </thead>
+      <!--      <thead>-->
+      <!--        <tr>-->
+      <!--          <th>Title</th>-->
+      <!--          <th>Owned by</th>-->
+      <!--          <th>Last modified</th>-->
+      <!--          <th></th>-->
+      <!--        </tr>-->
+      <!--      </thead>-->
       <tbody>
         <tr>
           <td>
@@ -87,7 +123,7 @@
           <td>
             <a href="../editor/editor.template.client.html">
               <i class="far fa-file-alt"></i>
-            CS4500 WebDev UnderGraduate
+              CS4500 WebDev UnderGraduate
             </a>
           </td>
           <td>me</td>
@@ -112,78 +148,359 @@
       </tbody>
     </table>
 
-    <div>Yesterday</div>
+    <h5>Yesterday</h5>
     <table class="table table-light table-striped table-hover">
 
       <tbody>
-      <tr>
-        <td>
-          <a href="../editor/editor.template.client.html">
-            <i class="far fa-file-alt"></i>
-            CS5500 Software Engineering Graduate
-          </a>
-        </td>
-        <td>me</td>
-        <td>1/25/2021</td>
-        <td>
-          <i class="far fa-trash-alt"></i>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="../editor/editor.template.client.html">
-            <i class="far fa-file-alt"></i>
-            CS4450 Software Engineering Undergraduate
-          </a>
-        </td>
-        <td>me</td>
-        <td>1/25/2021</td>
-        <td>
-          <i class="far fa-trash-alt"></i>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="../editor/editor.template.client.html">
-            <i class="far fa-file-alt"></i>
-            CS4500 WebDev UnderGraduate
-          </a>
-        </td>
-        <td>me</td>
-        <td>1/25/2021</td>
-        <td>
-          <i class="far fa-trash-alt"></i>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="../editor/editor.template.client.html">
-            <i class="far fa-file-alt"></i>
-            CS4500 WebDev UnderGraduate
-          </a>
-        </td>
-        <td>me</td>
-        <td>1/25/2021</td>
-        <td>
-          <i class="far fa-trash-alt"></i>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="../editor/editor.template.client.html">
-          <i class="far fa-file-alt"></i>
-          CS5610 WebDev Graduate
-          </a>
-        </td>
-        <td>me</td>
-        <td>1/25/2021</td>
-        <td>
-          <i class="far fa-trash-alt"></i>
-        </td>
-      </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5500 Software Engineering Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS4450 Software Engineering Undergraduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS4500 WebDev UnderGraduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS4500 WebDev UnderGraduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h5>Previous 7 days</h5>
+    <table class="table table-light table-striped table-hover">
+
+      <tbody>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5500 Software Engineering Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS4450 Software Engineering Undergraduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS4500 WebDev UnderGraduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS4500 WebDev UnderGraduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="../editor/editor.template.client.html">
+              <i class="far fa-file-alt"></i>
+              CS5610 WebDev Graduate
+            </a>
+          </td>
+          <td>me</td>
+          <td>1/25/2021</td>
+          <td>
+            <i class="far fa-trash-alt"></i>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
 
 </body>
+
 </html>
