@@ -15,32 +15,31 @@
     <div class="col-1" id="hamburger">
       <i class="fas fa-bars fa-2x"></i>
     </div>
-    <div class="col-2" id="name">
+    <div class="col-3 d-none d-md-block" id="name">
       Course Manager
     </div>
-    <div class="col-7">
+    <div class="col-6">
       <input type="text" class="form-control" placeholder="New Course Title" id="input1" />
     </div>
-    <div class="col-2">
+    <div class="col-1" id="plus-icon1">
       <i class="fas fa-plus fa-2x"></i>
     </div>
   </div>
 
   <div class="row form" id="yz-table-title">
-      <div class="col-6" id="title1">Title</div>
-      <div class="col-1" id="title2">
-        Owned by
-        <i class="fas fa-sort-down"></i>
-      </div>
-      <div class="col-2" id="title3">Last modified by me</div>
-      <div class="col-0.5" id="title4">
-        <i class="fas fa-grip-horizontal fa-1.5x"></i>
-      </div>
-      <div class="col-2.5" id="title5">
-        <i class="fas fa-sort-alpha-down fa-1.5x"></i>
-      </div>
-  </div>
-
+    <div class="col-5" id="title1">Title</div>
+    <div class="col-2" id="title2">
+      Owned by
+      <i class="fas fa-sort-down"></i>
+    </div>
+    <div class="col-2" id="title3">Last modified by me</div>
+    <div class="col-0.5" id="title4">
+      <i class="fas fa-grip-horizontal fa-1.5x"></i>
+    </div>
+    <div class="col-1" id="title5">
+      <i class="fas fa-sort-alpha-down fa-1.5x"></i>
+    </div>
+</div>
 
   <div class="row" id="iconFix">
     <div class="col-11"></div>
@@ -48,37 +47,10 @@
       <i class="fas fa-plus fa-2x"></i>
     </div>
   </div>
-  <!--  <div class="row yz-table-title">-->
-  <!--    <div class="col-5">-->
-  <!--      Title-->
-  <!--    </div>-->
-  <!--    <div class="col-2">-->
-  <!--      Owned by-->
-  <!--    </div>-->
-  <!--    <div class="col-2">-->
-  <!--      Last modified by me-->
-  <!--    </div>-->
-  <!--    <div class="col-1">-->
-  <!--      <i class="fas fa-grip-horizontal fa-2x"></i>-->
-  <!--    </div>-->
-  <!--    <div class="col-2">-->
-  <!--      <i class="fas fa-sort-alpha-down fa-2x"></i>-->
-  <!--    </div>-->
-  <!--  </div>-->
 
   <div class="container" id="container1">
-    <h1>
-      Dashboard
-    </h1>
+    <h5 id="special-date">Today</h5>
     <table class="table table-light table-striped table-hover">
-      <!--      <thead>-->
-      <!--        <tr>-->
-      <!--          <th>Title</th>-->
-      <!--          <th>Owned by</th>-->
-      <!--          <th>Last modified</th>-->
-      <!--          <th></th>-->
-      <!--        </tr>-->
-      <!--      </thead>-->
       <tbody>
         <tr>
           <td>
@@ -86,7 +58,7 @@
               <i class="far fa-file-alt"></i>
               CS5500 Software Engineering Graduate
             </a>
-          </td>
+          </td> 
           <td>me</td>
           <td>1/25/2021</td>
           <td>
@@ -150,7 +122,10 @@
 
     <h5>Yesterday</h5>
     <table class="table table-light table-striped table-hover">
-
+      <colgroup>
+        <col>
+        <col span="2" class="d-none d-sm-block">
+      </colgroup>
       <tbody>
         <tr>
           <td>
