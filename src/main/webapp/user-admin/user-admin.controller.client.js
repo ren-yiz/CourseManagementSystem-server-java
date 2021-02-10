@@ -70,7 +70,7 @@ function renderUsers(users) {
   $passwordFld.val("")
   $firstNameFld.val("")
   $lastNameFld.val("")
-  $roleFld.val("")
+
   $(".wbdv-remove").click(deleteUser)
   $(".wbdv-edit").click(editUser)
 }
