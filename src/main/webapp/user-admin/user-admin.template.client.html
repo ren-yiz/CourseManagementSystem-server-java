@@ -15,7 +15,6 @@
 <body>
   <div class="container-fluid">
     <h1>User Admin</h1>
-    <button id="wbdv-create-user">Add user</button>
     <table class="table table-striped table-hover">
       <thead>
         <tr>
@@ -26,22 +25,22 @@
           <th>Role</th>
           <th>&nbsp;</th>
         </tr>
-
         <tr>
           <th><input id="usernameFld" type="text"
                      class="form-control" placeholder="Username"></th>
-          <th><input id="passwordFld" type="text"
+          <th><input id="passwordFld" type="password"
                      class="form-control" placeholder="Password"></th>
           <th><input id="firstNameFld" type="text"
                      class="form-control" placeholder="First Name"></th>
           <th><input id="lastNameFld" type="text"
                      class="form-control" placeholder="Last Name"></th>
-          <th><select id="roleFld" name="" id="" class="form-control">
+          <th><select id="roleFld" name="" id="" class="form-control" >
               <option value="FACULTY">Faculty</option>
               <option value="STUDENT">Student</option>
               <option value="ADMIN">Admin</option>
             </select></th>
           <th><span class="pull-right" style="white-space: nowrap">
+              <i class="fa-2x fas fa-search"></i>
               <i class="fa-2x fa fa-plus wbdv-create"></i>
               <i class="fa-2x fa fa-check wbdv-update"></i>
               </span>
@@ -49,45 +48,7 @@
         </tr>
       </thead>
       <tbody class="wbdv-tbody">
-<!--        <tr class="wbdv-template wbdv-user wbdv-hidden">-->
-<!--          <td class="wbdv-username">ada</td>-->
-<!--          <td>&nbsp;</td>-->
-<!--          <td class="wbdv-first-name">Ada</td>-->
-<!--          <td class="wbdv-last-name">Lovelace</td>-->
-<!--          <td class="wbdv-role">FACULTY</td>-->
-<!--          <td class="wbdv-actions">-->
-<!--          <span class="pull-right">-->
-<!--            <i class="fa-2x fa fa-times wbdv-remove"></i>-->
-<!--            <i class="fa-2x fa fa-pencil wbdv-edit"></i>-->
-<!--          </span>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        <tr class="wbdv-template wbdv-user wbdv-hidden">-->
-<!--          <td class="wbdv-username">ada</td>-->
-<!--          <td>&nbsp;</td>-->
-<!--          <td class="wbdv-first-name">Ada</td>-->
-<!--          <td class="wbdv-last-name">Lovelace</td>-->
-<!--          <td class="wbdv-role">FACULTY</td>-->
-<!--          <td class="wbdv-actions">-->
-<!--          <span class="pull-right">-->
-<!--            <i class="fa-2x fa fa-times wbdv-remove"></i>-->
-<!--            <i class="fa-2x fa fa-pencil wbdv-edit"></i>-->
-<!--          </span>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        <tr class="wbdv-template wbdv-user wbdv-hidden">-->
-<!--          <td class="wbdv-username">ada</td>-->
-<!--          <td>&nbsp;</td>-->
-<!--          <td class="wbdv-first-name">Ada</td>-->
-<!--          <td class="wbdv-last-name">Lovelace</td>-->
-<!--          <td class="wbdv-role">FACULTY</td>-->
-<!--          <td class="wbdv-actions">-->
-<!--          <span class="pull-right">-->
-<!--            <i class="fa-2x fa fa-times wbdv-remove"></i>-->
-<!--            <i class="fa-2x fa fa-pencil wbdv-edit"></i>-->
-<!--          </span>-->
-<!--          </td>-->
-<!--        </tr>-->
+
       </tbody>
     </table>
   </div>

@@ -8,7 +8,6 @@ var theTableBody
 var $updateBtn
 var userService = new AdminUserServiceClient()
 
-
 var users = []
 
 function createUser() {
@@ -24,11 +23,6 @@ function createUser() {
     users.push(actualUser)
     renderUsers(users)
   })
-
-  // $usernameFld.val("")
-  // $passwordFld.val("")
-  // $firstNameFld.val("")
-  // $lastNameFld.val("")
 }
 
 function deleteUser(event) {
@@ -96,15 +90,14 @@ function updateUser() {
 }
 
 function init() {
-   $usernameFld = $("#usernameFld")
-   $passwordFld = $("#passwordFld")
-   $firstNameFld =$("#firstNameFld")
-   $lastNameFld = $("#lastNameFld")
-   $roleFld = $("#roleFld")
-   $wbdvCreate = $(".wbdv-create")
-   theTableBody = jQuery("tbody")
-   $updateBtn = $(".wbdv-update")
-
+  $usernameFld = $("#usernameFld")
+  $passwordFld = $("#passwordFld")
+  $firstNameFld =$("#firstNameFld")
+  $lastNameFld = $("#lastNameFld")
+  $roleFld = $("#roleFld")
+  $wbdvCreate = $(".wbdv-create")
+  theTableBody = jQuery("tbody")
+  $updateBtn = $(".wbdv-update")
 
   $updateBtn.click(updateUser)
   $wbdvCreate.click(createUser)
