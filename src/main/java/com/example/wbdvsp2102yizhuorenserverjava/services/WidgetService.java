@@ -41,4 +41,26 @@ public class WidgetService {
     return widget;
   }
 
+  public int deleteWidget(String wid) {
+     int index = -1;
+     for (int i = 0; i < widgets.size(); i++) {
+       if (widgets.get(i).getId().equals(Long.parseLong(wid))) {
+         index = i;
+         widgets.remove(index);
+         return 1;
+       }
+     }
+     return -1;
+  }
+
+  public int updateWidget(String wid, Widget widget) {
+    for (int i = 0; i < widgets.size(); i++) {
+      if (widgets.get(i).getId().equals(Long.parseLong(wid))) {
+        widgets.set(i, widget);
+        return 1;
+      }
+    }
+    return -1;
+  }
+
 }
