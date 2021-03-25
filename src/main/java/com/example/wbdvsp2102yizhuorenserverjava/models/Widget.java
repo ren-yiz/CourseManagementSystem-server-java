@@ -6,6 +6,14 @@ public class Widget {
   private String type;
   private Integer size;
   private String text;
+  private String name;
+  private Integer widgetOrder;
+  private String src;
+  private Integer width;
+  private Integer height;
+  private String cssClass;
+  private String style;
+  private String value;
 
   public Widget(Long id, String topicId, String type, Integer size, String text) {
     this.id = id;
